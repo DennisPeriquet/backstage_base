@@ -4,7 +4,7 @@ FROM node:18-bookworm-slim AS build-env
 # Install necessary build dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends python3 g++ build-essential git && \
-    yarn set version 1.x
+    yarn set version 1.22.19
 
 # Set the working directory
 WORKDIR /app
